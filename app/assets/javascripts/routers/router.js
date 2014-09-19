@@ -1,9 +1,9 @@
 TrelloClone.Routers.Router = Backbone.Router.extend({
   initialize: function () {
-    // var dropDownView = new TrelloClone.Views.DropDownView({
-    //   collection: TrelloClone.Collections.Boards
-    // })
-    // $('#add-dropdown').append(dropDownView.render().$el);
+    var dropDownView = new TrelloClone.Views.DropDownView({
+      collection: TrelloClone.Collections.Boards
+    })
+    $('#add-dropdown').append(dropDownView.render().$el);
     this.$rootEl = $('#main');
   },
   

@@ -1,13 +1,16 @@
-<div class="boards-index">
-  <h6>My Boards</h6>
+
+<div class='boards-index-title'>
+  <h3>My Boards</h3>
 </div>
-<br>
-<br>
-<ul class="boards">
+
+<ul class='boards'>
   <% boards.each(function (board) { %>
     <li>
       <a href="#/boards/<%= board.id %>">
-        <%= board.escape("title") %>
+        <span class='shadow'></span>
+        <span class='details'>        
+          <%= board.escape("title") %>
+        </span>
       </a>
     </li>
   <% }); %>
